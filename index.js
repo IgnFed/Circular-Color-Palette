@@ -1,6 +1,6 @@
 const items = [...document.querySelectorAll('.circle')]
 const list = document.querySelector('.clickeable-circle')
-const body = document.body;
+const app = document.getElementById('app');
 
 let menuIsActive = false
 
@@ -20,13 +20,13 @@ function hideElements(){
   items.forEach((el, idx)=>{
     el.style.transform = `rotate(${((360/items.length)*(-idx))}deg) translate(0)`
   })
-  body.style.setProperty('background-color', 'rgba(114, 17, 108, 0.849)')
+  app.style.setProperty('background-color', 'rgba(114, 17, 108, 0.849)')
 }
 
 items.forEach((element)=>{
   element.addEventListener('click', (e)=>{
     const bgColor = getComputedStyle(e.target, null).backgroundColor
-    body.style.setProperty('background-color', bgColor)
+    app.style.setProperty('background-color', bgColor)
   })
 })
 
