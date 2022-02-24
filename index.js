@@ -5,8 +5,6 @@ const body = document.body;
 
 let menuIsActive = false
 
-console.log(items)
-
 items.forEach((element)=>{
   const bgColor = element.getAttribute('data-color');
   element.style.setProperty('background-color',  bgColor)
@@ -24,10 +22,6 @@ function hideElements(){
     el.style.transform = `rotate(${((360/items.length)*(-idx))}deg) translate(0)`
   })
   body.style.setProperty('background-color', 'rgba(114, 17, 108, 0.849)')
-}
-
-function changeBackgrond(tgt){
-  console.log(tgt)
 }
 
 items.forEach((element)=>{
