@@ -12,7 +12,6 @@ html, *, *::after, *::before{
 body{
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(114, 17, 108, 0.849) ;
 }
 
 #app{
@@ -20,6 +19,8 @@ body{
   padding: 1rem;
   display: grid;
   place-content: center;
+  background-color: #72116cd8 ;
+  transition: background-color .1s ease-in-out;
 }
 .clickeable-circle{
   width: var(--circle-area);
