@@ -1,4 +1,3 @@
-const ROOT = document.documentElement;
 const items = [...document.querySelectorAll('.circle')]
 const list = document.querySelector('.clickeable-circle')
 const body = document.body;
