@@ -12,13 +12,13 @@ items.forEach((element)=>{
 
 function displayElements(){
   items.forEach((el, idx)=>{
-    el.style.transform = `rotate(${((360/items.length)*(idx))}deg) translate(${(-(120+items.length+50))}px)`
+    el.style.transform = `rotate(${((360/items.length)*idx)}deg) translate(${(-(120+items.length+50))}px)`
   })
 }
 
 function hideElements(){
   items.forEach((el, idx)=>{
-    el.style.transform = `rotate(${((360/items.length)*(-idx))}deg) translate(0)`
+    el.style.transform = `rotate(${((360/items.length)*-idx)}deg) translate(0)`
   })
   app.style.setProperty('background-color', 'rgba(114, 17, 108, 0.849)')
 }
